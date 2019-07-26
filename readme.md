@@ -27,5 +27,11 @@ The [JS](JS) folder contains a client application.
 3. Open ```http://localhost:3000/``` in your browser to see the result. The HTML JavaScript Dashboard displays the dashboard stored on the preconfigured server (```https://demos.devexpress.com/services/dashboard/api```).
 
 ## See Also
+
+Documentation:
 - [Client-Side Configuration (React)](https://docs.devexpress.com/Dashboard/400683)
 - [HTML JavaScript Dashboard Control](https://docs.devexpress.com/Dashboard/119108/)
+
+Examples:
+- [Dashboard Client-Side Application (Angular)](https://github.com/DevExpress-Examples/dashboarda-angular-app)
+- [Dashboard Client-Side Application (Vue)](https://github.com/DevExpress-Examples/dashboard-vue-app)
