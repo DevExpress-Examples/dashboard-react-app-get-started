@@ -33,5 +33,5 @@ Documentation:
 - [HTML JavaScript Dashboard Control](https://docs.devexpress.com/Dashboard/119108/)
 
 Examples:
-- [Dashboard Client-Side Application (Angular)](https://github.com/DevExpress-Examples/dashboarda-angular-app)
+- [Dashboard Client-Side Application (Angular)](https://github.com/DevExpress-Examples/dashboard-angular-app)
 - [Dashboard Client-Side Application (Vue)](https://github.com/DevExpress-Examples/dashboard-vue-app)
