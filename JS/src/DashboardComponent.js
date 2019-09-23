@@ -1,12 +1,9 @@
 import React from 'react';
-import { DashboardControl, ResourceManager, DashboardPanelExtension } from 'devexpress-dashboard';
-import Globalize from 'globalize'
+import { DashboardControl, ResourceManager } from 'devexpress-dashboard';
 
 class DashboardComponent extends React.Component {
     constructor(props) {
         super(props);
-
-        this.initGlobalize();
         ResourceManager.embedBundledResources();
     }
 
@@ -16,7 +13,6 @@ class DashboardComponent extends React.Component {
             endpoint: "https://demos.devexpress.com/services/dashboard/api",
             workingMode: "Designer",
         });
-        this.dashboardControl.registerExtension(new DashboardPanelExtension(this.dashboardControl));
         this.dashboardControl.render();
     }
 
@@ -28,14 +24,6 @@ class DashboardComponent extends React.Component {
         return (
             <div ref="dashboardcontainer" style={{ width: '100%', height: '100%' }}></div>
         );
-    }
-
-    initGlobalize() {
-        Globalize.load(
-            require('devextreme-cldr-data/en.json'),
-            require('devextreme-cldr-data/supplemental.json')
-        );
-        Globalize.locale('en');
     }
 }
 
