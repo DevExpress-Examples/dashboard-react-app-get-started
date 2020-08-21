@@ -17,7 +17,7 @@ In the **asp-net-core-server** folder run the following command:
 dotnet run
 ```
 
-In the **dashboard-angular-app** folder, run the following commands:
+In the **dashboard-react-app** folder, run the following commands:
 
 ```
 npm start
