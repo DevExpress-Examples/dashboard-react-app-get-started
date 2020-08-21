@@ -3,12 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@devexpress/analytics-core": "19.2-next",
-    "devexpress-dashboard": "19.2-next",
-    "devextreme": "19.2-next",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "@devexpress/analytics-core": "20.2-next",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "devexpress-dashboard": "20.2-next",
+    "devexpress-dashboard-react": "20.2-next",
+    "devextreme": "20.2-next",
+    "devextreme-react": "20.2-next",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
