@@ -19,6 +19,7 @@ dotnet run
 In the **dashboard-react-app** folder, run the following commands:
 
 ```
+npm install
 npm start
 ```
 
