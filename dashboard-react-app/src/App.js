@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import DashboardControl from 'devexpress-dashboard-react';
 
-function App() {
+function App() {  
   return (
     <div style={{ position : 'absolute', top : '0px', left: '0px', right : '0px', bottom: '0px' }}>
       <DashboardControl style={{ height: '100%' }} 
