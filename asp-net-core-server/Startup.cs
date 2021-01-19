@@ -58,14 +58,23 @@ namespace AspNetCoreDashboardBackend {
         }
         public DataSourceInMemoryStorage CreateDataSourceStorage() {
             DataSourceInMemoryStorage dataSourceStorage = new DataSourceInMemoryStorage();
-            DashboardJsonDataSource jsonDataSource = new DashboardJsonDataSource("Customers");
-            jsonDataSource.RootElement = "Customers";
-            dataSourceStorage.RegisterDataSource("jsonDataSourceSupport", jsonDataSource.SaveToXml());
+            DashboardJsonDataSource jsonDataSourceSupport = new DashboardJsonDataSource("Support");
+            jsonDataSourceSupport.RootElement = "Employee";
+            dataSourceStorage.RegisterDataSource("jsonDataSourceSupport", jsonDataSourceSupport.SaveToXml());
+            DashboardJsonDataSource jsonDataSourceCategories = new DashboardJsonDataSource("Categories");
+            //jsonDataSourceCategories.RootElement = "";
+            dataSourceStorage.RegisterDataSource("jsonDataSourceCategories", jsonDataSourceCategories.SaveToXml());
             return dataSourceStorage;
         }
         private void Configurator_ConfigureDataConnection(object sender, ConfigureDataConnectionWebEventArgs e) {
-            if (e.DataSourceName.Contains("Customers")) {
-                Uri fileUri = new Uri("https://raw.githubusercontent.com/DevExpress-Examples/DataSources/master/JSON/customers.json");
+            if (e.DataSourceName.Contains("Support")) {
+                Uri fileUri = new Uri(FileProvider.GetFileInfo("App_Data/Support.json").PhysicalPath, UriKind.RelativeOrAbsolute);
+                JsonSourceConnectionParameters jsonParams = new JsonSourceConnectionParameters();
+                jsonParams.JsonSource = new UriJsonSource(fileUri);
+                e.ConnectionParameters = jsonParams;
+            }
+            if (e.DataSourceName.Contains("Categories")) {
+                Uri fileUri = new Uri(FileProvider.GetFileInfo("App_Data/Categories.json").PhysicalPath, UriKind.RelativeOrAbsolute);
                 JsonSourceConnectionParameters jsonParams = new JsonSourceConnectionParameters();
                 jsonParams.JsonSource = new UriJsonSource(fileUri);
                 e.ConnectionParameters = jsonParams;
