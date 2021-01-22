@@ -1,11 +1,11 @@
-# Dashboard Client-Side Application (React)
+# Get Started - Client-Side Dashboard Application built with React
 
-This example is a ready-to-use client React application with the DevExpress Dashboard component.
+This project demonstrates how you can incorporate a DevExpress Dashboard component into a client-side app built with React. Use it as a template when you need to create a similar web application.
 
-The example uses a modular approach that based on the client-server model. You need a server (backend) project and a client (frontend) application that includes all the necessary styles, scripts and HTML-templates. Note that the script version on the client should match with libraries version on the server up to a minor version.
+The example uses a modular client-server approach. The server (backend) project communicates with the client (frontend) application that includes all the necessary styles, scripts and HTML templates. Note that the script version on the client must match the version of libraries on the server.
 
-- The [asp-net-core-server](asp-net-core-server) folder contains an ASP.NET Core 3.1 Dashboard application.
-- The [dashboard-react-app](dashboard-react-app) folder contains a client application.
+- The [asp-net-core-server](asp-net-core-server) folder contains the backend project built with ASP.NET Core 3.1.
+- The [dashboard-react-app](dashboard-react-app) folder contains the client application built with React.
 
 ## Quick Start
 
@@ -27,11 +27,11 @@ Open ```http://localhost:3000/``` in your browser to see the result.
 
 ## Documentation
 
-- [Add Web Dashboard to a React Application](https://docs.devexpress.com/Dashboard/400683/web-dashboard/dashboard-component-for-react/add-web-dashboard-to-a-react-application?v=20.2)
+- [Create a React Dashboard Application](https://docs.devexpress.com/Dashboard/402336/get-started/build-web-dashboard-applications/create-a-react-dashboard-application?v=20.2)
 - [Dashboard Component for React](https://docs.devexpress.com/Dashboard/401977/web-dashboard/dashboard-component-for-react?v=20.2)
 
 ## Examples
-- [Dashboard Client-Side Application (Angular)](https://github.com/DevExpress-Examples/dashboard-angular-app)
-- [Dashboard Client-Side Application (Vue)](https://github.com/DevExpress-Examples/dashboard-vue-app)
-- [Dashboard React Example](https://github.com/DevExpress-Examples/dashboard-react-example)
+- [Dashboard Component for React - Configuration](https://github.com/DevExpress-Examples/dashboard-react-example)
+- [Get Started - Client-Side Dashboard Application (Angular)](https://github.com/DevExpress-Examples/dashboard-angular-app)
+- [Get Started - Client-Side Dashboard Application (Vue)](https://github.com/DevExpress-Examples/dashboard-vue-app)
 - [ASP.NET Core 3.1 backend for Web Dashboard](https://github.com/DevExpress-Examples/asp-net-core-dashboard-backend)
