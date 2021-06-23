@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [App.js](./dashboard-react-app/src/App.js)
+* [Startup.cs](./asp-net-core-server/Startup.cs)
+<!-- default file list end -->
+
 # Dashoboard for React - Get Started - Client-Side Dashboard Application
 
 This project demonstrates how you can incorporate a DevExpress Dashboard component into a client-side app built with React. Use it as a template when you need to create a similar web application.
