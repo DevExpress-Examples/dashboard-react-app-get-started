@@ -33,13 +33,15 @@ namespace AspNetCoreDashboardBackend {
                 // Adds the DevExpress middleware.
                 .AddDevExpressControls()
                 // Adds controllers.
-                .AddControllers()
-                // Configures the dashboard backend.
-                .AddDefaultDashboardController(configurator => {
-                    configurator.SetDashboardStorage(new DashboardFileStorage(FileProvider.GetFileInfo("App_Data/Dashboards").PhysicalPath));
-                    configurator.SetDataSourceStorage(CreateDataSourceStorage());
-                    configurator.ConfigureDataConnection += Configurator_ConfigureDataConnection;
-                });
+                .AddControllers();
+            // Configures the dashboard backend.
+            services.AddScoped<DashboardConfigurator>((IServiceProvider serviceProvider) => {
+                DashboardConfigurator configurator = new DashboardConfigurator();                
+                configurator.SetDashboardStorage(new DashboardFileStorage(FileProvider.GetFileInfo("App_Data/Dashboards").PhysicalPath));
+                configurator.SetDataSourceStorage(CreateDataSourceStorage());
+                configurator.ConfigureDataConnection += Configurator_ConfigureDataConnection;
+                return configurator;
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
@@ -51,7 +53,7 @@ namespace AspNetCoreDashboardBackend {
             app.UseCors("CorsPolicy");
             app.UseEndpoints(endpoints => {
                 // Maps the dashboard route.
-                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "api/dashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "api/dashboard", "DefaultDashboard");
                 // Requires CORS policies.
                 endpoints.MapControllers().RequireCors("CorsPolicy");
             });
