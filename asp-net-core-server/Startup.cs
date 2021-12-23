@@ -58,24 +58,28 @@ namespace AspNetCoreDashboardBackend {
                 endpoints.MapControllers().RequireCors("CorsPolicy");
             });
         }
+
         public DataSourceInMemoryStorage CreateDataSourceStorage() {
             DataSourceInMemoryStorage dataSourceStorage = new DataSourceInMemoryStorage();
             DashboardJsonDataSource jsonDataSourceSupport = new DashboardJsonDataSource("Support");
+            jsonDataSourceSupport.ConnectionName = "jsonSupport";
             jsonDataSourceSupport.RootElement = "Employee";
             dataSourceStorage.RegisterDataSource("jsonDataSourceSupport", jsonDataSourceSupport.SaveToXml());
             DashboardJsonDataSource jsonDataSourceCategories = new DashboardJsonDataSource("Categories");
+            jsonDataSourceCategories.ConnectionName = "jsonCategories";
             //jsonDataSourceCategories.RootElement = "";
             dataSourceStorage.RegisterDataSource("jsonDataSourceCategories", jsonDataSourceCategories.SaveToXml());
             return dataSourceStorage;
         }
+
         private void Configurator_ConfigureDataConnection(object sender, ConfigureDataConnectionWebEventArgs e) {
-            if (e.DataSourceName.Contains("Support")) {
+            if (e.ConnectionName == "jsonSupport") {
                 Uri fileUri = new Uri(FileProvider.GetFileInfo("App_Data/Support.json").PhysicalPath, UriKind.RelativeOrAbsolute);
                 JsonSourceConnectionParameters jsonParams = new JsonSourceConnectionParameters();
                 jsonParams.JsonSource = new UriJsonSource(fileUri);
                 e.ConnectionParameters = jsonParams;
             }
-            if (e.DataSourceName.Contains("Categories")) {
+            if (e.ConnectionName == "jsonCategories") {
                 Uri fileUri = new Uri(FileProvider.GetFileInfo("App_Data/Categories.json").PhysicalPath, UriKind.RelativeOrAbsolute);
                 JsonSourceConnectionParameters jsonParams = new JsonSourceConnectionParameters();
                 jsonParams.JsonSource = new UriJsonSource(fileUri);
