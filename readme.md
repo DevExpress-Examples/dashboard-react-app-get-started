@@ -1,42 +1,58 @@
 <!-- default badges list -->
+<<<<<<< HEAD
 ![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/199043012/19.2.3%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T828553)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Dashboard Client-Side Application (React)
+=======
+![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/199043012/20.2.1%2B)
+[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T828553)
+[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+<!-- default badges end -->
+<!-- default file list -->
+*Files to look at*:
+>>>>>>> 20.2.1+
 
-This example is a ready-to-use client React application with the DevExpress Dashboard component.
+* [App.js](./dashboard-react-app/src/App.js)
+* [Startup.cs](./asp-net-core-server/Startup.cs)
+<!-- default file list end -->
 
-> **Documentation**: [Client-Side Configuration (React)](https://docs.devexpress.com/Dashboard/400683)
+# Dashboard for React - Get Started - Client-Side Dashboard Application
 
-The example uses a modular approach that based on the client-server model. You need a server (backend) project and a client (frontend) application that includes all the necessary styles, scripts and HTML-templates. Note that the script version on the client should match with libraries version on the server up to a minor version.
+This project demonstrates how you can incorporate a DevExpress Dashboard component into a client-side app built with React. Use it as a template when you need to create a similar web application.
 
-The server project hosts on ```https://demos.devexpress.com/services/dashboard/api```.
+The example uses a modular client-server approach. The server (backend) project communicates with the client (frontend) application that includes all the necessary styles, scripts and HTML templates. Note that the script version on the client must match the version of libraries on the server.
 
-The [JS](JS) folder contains a client application.
+- The [asp-net-core-server](asp-net-core-server) folder contains the backend project built with ASP.NET Core 3.1.
+- The [dashboard-react-app](dashboard-react-app) folder contains the client application built with React.
 
 ## Quick Start
 
-1. Open the **JS** folder. In the command prompt, download and install npm packages used in the application:
+In the **asp-net-core-server** folder run the following command:
 
-    ```
-    npm install
-    ```
+```
+dotnet run
+```
+> This server allows CORS requests from _all_ origins with _any_ scheme (http or https). This default configuration is insecure: any website can make cross-origin requests to the app. We recommend that you specify the client application's URL to prohibit other clients from accessing sensitive information stored on the server. Learn more: [Cross-Origin Resource Sharing (CORS)](https://docs.devexpress.com/Dashboard/400709)
 
-2. In the same folder, run the following command to compile and run the application:
+In the **dashboard-react-app** folder, run the following commands:
 
-    ```bash
-    npm start
-    ```
+```
+npm install
+npm start
+```
 
-3. Open ```http://localhost:3000/``` in your browser to see the result. The HTML JavaScript Dashboard displays the dashboard stored on the preconfigured server (```https://demos.devexpress.com/services/dashboard/api```).
+Open ```http://localhost:3000/``` in your browser to see the result.
 
-## See Also
+## Documentation
 
-Documentation:
-- [Client-Side Configuration (React)](https://docs.devexpress.com/Dashboard/400683)
-- [HTML JavaScript Dashboard Control](https://docs.devexpress.com/Dashboard/119108/)
+- [Create a React Dashboard Application](https://docs.devexpress.com/Dashboard/402336/get-started/build-web-dashboard-applications/create-a-react-dashboard-application)
+- [Dashboard Component for React](https://docs.devexpress.com/Dashboard/401977/web-dashboard/dashboard-component-for-react)
+- [Install DevExpress Controls Using NuGet Packages](https://docs.devexpress.com/GeneralInformation/115912/installation/install-devexpress-controls-using-nuget-packages)
 
-Examples:
-- [Dashboard Client-Side Application (Angular)](https://github.com/DevExpress-Examples/dashboard-angular-app)
-- [Dashboard Client-Side Application (Vue)](https://github.com/DevExpress-Examples/dashboard-vue-app)
+## Examples
+- [Dashboard Component for React - Configuration](https://github.com/DevExpress-Examples/dashboard-react-example)
+- [Get Started - Client-Side Dashboard Application (Angular)](https://github.com/DevExpress-Examples/dashboard-angular-app)
+- [Get Started - Client-Side Dashboard Application (Vue)](https://github.com/DevExpress-Examples/dashboard-vue-app)
+- [ASP.NET Core 3.1 backend for Web Dashboard](https://github.com/DevExpress-Examples/asp-net-core-dashboard-backend)
