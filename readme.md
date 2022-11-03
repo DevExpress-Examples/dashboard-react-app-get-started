@@ -39,12 +39,9 @@ npm start
 
 Open ```http://localhost:3000/``` in your browser to see the result.
 
-<!-- default file list -->
-## Files to Look At
-
+## Files to Review
 * [App.js](./dashboard-react-app/src/App.js)
 * [Startup.cs](./asp-net-core-server/Startup.cs)
-<!-- default file list end -->
 
 ## Documentation
 
@@ -53,7 +50,8 @@ Open ```http://localhost:3000/``` in your browser to see the result.
 - [Install DevExpress Controls Using NuGet Packages](https://docs.devexpress.com/GeneralInformation/115912/installation/install-devexpress-controls-using-nuget-packages)
 
 ## Examples
-- [Dashboard Component for React - Configuration](https://github.com/DevExpress-Examples/dashboard-react-app-configuration)
-- [Get Started - Client-Side Dashboard Application (Angular)](https://github.com/DevExpress-Examples/dashboard-angular-app-get-started)
-- [Get Started - Client-Side Dashboard Application (Vue)](https://github.com/DevExpress-Examples/dashboard-vue-app-get-started)
-- [ASP.NET Core backend for Web Dashboard](https://github.com/DevExpress-Examples/asp-net-core-dashboard-backend)
+
+- [Dashboard for React - Configuration](https://github.com/DevExpress-Examples/dashboard-react-app-configuration)
+- [Dashboard for Angular - Get Started](https://github.com/DevExpress-Examples/dashboard-angular-app-get-started)
+- [Dashboard for Vue - Get Started](https://github.com/DevExpress-Examples/dashboard-vue-app-get-started)
+- [Dashboard for ASP.NET Core - Backend](https://github.com/DevExpress-Examples/asp-net-core-dashboard-backend)
