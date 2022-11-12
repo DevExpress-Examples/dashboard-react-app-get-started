@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@devexpress/analytics-core": "21.2-stable",
-    "devexpress-dashboard": "21.2-stable",
-    "devexpress-dashboard-react": "21.2-stable",
-    "devextreme": "21.2-stable",
-    "devextreme-react": "21.2-stable",
+    "@devexpress/analytics-core": "22.1-stable",
+    "devexpress-dashboard": "22.1-stable",
+    "devexpress-dashboard-react": "22.1-stable",
+    "devextreme": "22.1-stable",
+    "devextreme-react": "22.1-stable",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -16,8 +16,8 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "start": "react-scripts start --openssl-legacy-provider",
+    "build": "react-scripts build --openssl-legacy-provider",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
