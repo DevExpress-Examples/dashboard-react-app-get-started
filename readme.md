@@ -10,7 +10,7 @@ This project demonstrates how you can incorporate a DevExpress Dashboard compone
 
 The example uses a modular client-server approach. The server (backend) project communicates with the client (frontend) application that includes all the necessary styles, scripts and HTML templates. Note that the script version on the client must match the version of libraries on the server.
 
-- The [asp-net-core-server](asp-net-core-server) folder contains the backend project built with ASP.NET Core 3.1.
+- The [asp-net-core-server](asp-net-core-server) folder contains the backend project that targets .NET 6.
 - The [dashboard-react-app](dashboard-react-app) folder contains the client application built with React.
 
 ## Quick Start
@@ -41,7 +41,7 @@ Open ```http://localhost:3000/``` in your browser to see the result.
 
 ## Files to Review
 * [App.js](./dashboard-react-app/src/App.js)
-* [Startup.cs](./asp-net-core-server/Startup.cs)
+* [Program.cs](./asp-net-core-server/Program.cs)
 
 ## Documentation
 
