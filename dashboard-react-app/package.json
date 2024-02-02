@@ -3,17 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@devexpress/analytics-core": "23.1-next",
-    "devexpress-dashboard": "23.1-next",
-    "devexpress-dashboard-react": "23.1-next",
-    "devextreme": "23.1-next",
-    "devextreme-react": "23.1-next",
+    "@devexpress/analytics-core": "23.2-stable",
+    "devexpress-dashboard": "23.2-stable",
+    "devexpress-dashboard-react": "23.2-stable",
+    "devextreme": "23.2-stable",
+    "devextreme-react": "23.2-stable",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "5.0.0"
   },
   "scripts": {
     "start": "react-scripts start --openssl-legacy-provider",
