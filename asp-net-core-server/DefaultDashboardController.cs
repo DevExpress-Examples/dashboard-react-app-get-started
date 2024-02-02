@@ -1,4 +1,4 @@
-﻿using DevExpress.DashboardAspNetCore;
+using DevExpress.DashboardAspNetCore;
 using DevExpress.DashboardWeb;
 using Microsoft.AspNetCore.DataProtection;
 
