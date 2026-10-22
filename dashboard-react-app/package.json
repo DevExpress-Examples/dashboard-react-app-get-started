@@ -10,11 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@devexpress/analytics-core": "^24.2.3",
-    "devexpress-dashboard": "^24.2.3",
-    "devexpress-dashboard-react": "^24.2.3",
-    "devextreme": "^24.2.3",
-    "devextreme-react": "^24.2.3",
+    "@devexpress/analytics-core": "26.1-stable",
+    "devexpress-dashboard": "26.1-stable",
+    "devexpress-dashboard-react": "26.1-stable",
+    "devextreme": "26.1-stable",
+    "devextreme-react": "26.1-stable",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
